@@ -1,0 +1,13 @@
+.idea
+
+target
+ApplicationCore/target
+RepositoriesAdapters/target
+ApplicationPorts/target
+
+HexagonalArchitecture.iml
+RepositoriesAdapters/RepositoriesAdapters.iml
+ApplicationPorts/ApplicationPorts.iml
+ApplicationCore/ApplicationCore.iml
+/ApplicationCore/ApplicationService/ApplicationService.iml
+/ApplicationCore/DomainModel/DomainModel.iml
