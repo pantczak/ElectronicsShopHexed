@@ -1,7 +1,7 @@
 # ElectronicsShopHexed
 ***APP UNDER DEVELOPMENT***
 
-App based on [ElectronicsShopWeb](github.com/pantczak/ElectronicsShopWeb).
+App based on [ElectronicsShopWeb](https://github.com/pantczak/ElectronicsShopWeb).
 
 Application created during Web Components Technologies (Technologie Komponentów Sieciowych) classes at TUL. 
 
