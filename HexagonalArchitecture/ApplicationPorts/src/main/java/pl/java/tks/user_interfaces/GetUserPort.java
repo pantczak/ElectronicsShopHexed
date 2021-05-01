@@ -6,16 +6,16 @@ import pl.java.tks.model_domain.model.user.User;
 import java.util.List;
 import java.util.UUID;
 
-public interface GetUserPort {
-    User getUser(UUID uuid);
+public interface GetUserPort<T1,T2> {
+    T1 getUser(UUID uuid);
 
-    User getUser(String login);
+    T1 getUser(String login);
 
-    List<Client> getAllClients();
+    List<T2> getAllClients();
 
-    List<User> getAllEmployees();
+    List<T1> getAllEmployees();
 
-    List<User> getAllAdministrators();
+    List<T1> getAllAdministrators();
 
-    List<User> getAll();
+    List<T1> getAll();
 }

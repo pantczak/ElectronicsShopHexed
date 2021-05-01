@@ -7,12 +7,13 @@ import pl.java.tks.model_ent.model.resource.SmartphoneEnt;
 import pl.java.tks.model_ent.repositories.interfaces.IDeviceRepository;
 
 import javax.annotation.PostConstruct;
+import javax.enterprise.context.ApplicationScoped;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-
+@ApplicationScoped
 public class DeviceEntRepository implements IDeviceRepository, Serializable {
 
     private final List<DeviceEnt> devices;

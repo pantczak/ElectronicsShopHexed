@@ -1,0 +1,3 @@
+<payara-web-app>
+    <context-root>/soap</context-root>
+</payara-web-app>

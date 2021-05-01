@@ -4,6 +4,8 @@ target
 ApplicationCore/target
 RepositoriesAdapters/target
 ApplicationPorts/target
+SoapAdapter/target
+RestAdapter/target
 
 HexagonalArchitecture.iml
 RepositoriesAdapters/RepositoriesAdapters.iml
@@ -11,3 +13,6 @@ ApplicationPorts/ApplicationPorts.iml
 ApplicationCore/ApplicationCore.iml
 /ApplicationCore/ApplicationService/ApplicationService.iml
 /ApplicationCore/DomainModel/DomainModel.iml
+/SoapAdapter/SoapAdapter.iml
+/RestAdapter/RestAdapter.iml
+

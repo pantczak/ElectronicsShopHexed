@@ -4,6 +4,8 @@ package pl.java.tks.model_ent.repositories;
 import pl.java.tks.model_ent.model.EventEnt;
 import pl.java.tks.model_ent.repositories.interfaces.IEventRepository;
 
+import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.inject.Default;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
@@ -11,6 +13,7 @@ import java.util.List;
 import java.util.UUID;
 
 
+@ApplicationScoped
 public class EventEntRepository implements IEventRepository, Serializable {
     private final List<EventEnt> events;
 

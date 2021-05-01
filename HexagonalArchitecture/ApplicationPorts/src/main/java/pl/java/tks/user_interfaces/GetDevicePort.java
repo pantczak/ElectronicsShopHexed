@@ -7,9 +7,12 @@ import pl.java.tks.model_domain.model.resource.Smartphone;
 import java.util.List;
 import java.util.UUID;
 
-public interface GetDevicePort {
-    Device getDevice(UUID uuid);
-    List<Device> getAllDevices();
-    List<Laptop> getAllLaptops();
-    List<Smartphone> getAllSmartphones();
+public interface GetDevicePort<T1, T2, T3> {
+    T1 getDevice(UUID uuid);
+
+    List<T1> getAllDevices();
+
+    List<T2> getAllLaptops();
+
+    List<T3> getAllSmartphones();
 }

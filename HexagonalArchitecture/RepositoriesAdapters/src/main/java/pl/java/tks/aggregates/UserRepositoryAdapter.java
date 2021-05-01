@@ -8,7 +8,9 @@ import pl.java.tks.model_domain.model.user.Employee;
 import pl.java.tks.model_domain.model.user.User;
 import pl.java.tks.model_ent.repositories.UserEntRepository;
 
+import javax.annotation.PostConstruct;
 import javax.enterprise.context.Dependent;
+import javax.enterprise.inject.Default;
 import javax.inject.Inject;
 import java.util.List;
 import java.util.UUID;
@@ -18,6 +20,13 @@ import java.util.stream.Collectors;
 public class UserRepositoryAdapter implements UserPort {
 
     private final UserEntRepository repository;
+
+    @PostConstruct
+    private void init(){
+        addUser(new Client("Dokor","Nauk","rodzyn123","pasowd123",15));
+        addUser(new Employee("Adam","123","dfsd","pasowd123"));
+        addUser(new Administrator("Pan","Admin","dlaCiebie","admin123123"));
+    }
 
     @Inject
     public UserRepositoryAdapter(UserEntRepository repository) {

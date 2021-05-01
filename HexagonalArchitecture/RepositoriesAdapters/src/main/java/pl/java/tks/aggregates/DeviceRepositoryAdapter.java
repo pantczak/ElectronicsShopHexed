@@ -7,6 +7,7 @@ import pl.java.tks.model_domain.model.resource.Laptop;
 import pl.java.tks.model_domain.model.resource.Smartphone;
 import pl.java.tks.model_ent.repositories.DeviceEntRepository;
 
+import javax.annotation.PostConstruct;
 import javax.enterprise.context.Dependent;
 import javax.inject.Inject;
 import java.util.List;
@@ -23,6 +24,15 @@ public class DeviceRepositoryAdapter implements DevicePort {
     public DeviceRepositoryAdapter(DeviceEntRepository repository) {
         this.repository = repository;
 //        converter = new ModelEntConverter();
+    }
+
+    @PostConstruct
+    private void initRepo(){
+        addDevice(new Laptop("Apple","MacBook",1660,16));
+        addDevice(new Laptop("Xiaomi","MiAir",1290,8));
+        addDevice(new Laptop("HP","ProBook",1440,8));
+        addDevice(new Smartphone("Samsung","S29",1440,15.6));
+        addDevice(new Smartphone("Nokia","460",600,119.9));
     }
 
     @Override

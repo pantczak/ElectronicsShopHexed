@@ -3,8 +3,11 @@ package pl.java.tks.aggregates;
 import pl.java.tks.aggregates.converters.EventConverter;
 import pl.java.tks.infrastructure.EventPort;
 import pl.java.tks.model_domain.model.Event;
+import pl.java.tks.model_domain.model.resource.Laptop;
+import pl.java.tks.model_domain.model.user.Client;
 import pl.java.tks.model_ent.repositories.EventEntRepository;
 
+import javax.annotation.PostConstruct;
 import javax.enterprise.context.Dependent;
 import javax.inject.Inject;
 import java.util.List;
@@ -16,6 +19,17 @@ public class EventRepositoryAdapter implements EventPort {
 
     private final EventEntRepository repository;
 //    private ModelEntConverter converter;
+
+    @PostConstruct
+    private void init() {
+        Laptop laptop = new Laptop("Xiaomi", "MiAir", 1290, 8);
+        laptop.setUuid(UUID.randomUUID());
+        Client client = new Client("Dokor", "Nauk", "rodzyn123", "pasowd123", 15);
+        client.setUuid(UUID.randomUUID());
+        addEvent(new Event(laptop,client));
+
+    }
+
 
     @Inject
     public EventRepositoryAdapter(EventEntRepository repository) {

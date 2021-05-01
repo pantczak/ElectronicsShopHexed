@@ -1,16 +1,14 @@
 package pl.java.tks.user_interfaces;
 
-import pl.java.tks.model_domain.model.Event;
-
 import java.util.List;
 import java.util.UUID;
 
-public interface GetEventPort {
-    Event getEvent(UUID uuid);
+public interface GetEventPort<T1> {
+    T1 getEvent(UUID uuid);
 
-    List<Event> getEventsByUser(UUID uuid);
+    List<T1> getEventsByUser(UUID uuid);
 
-    List<Event> getEventsByDevice(UUID uuid);
+    List<T1> getEventsByDevice(UUID uuid);
 
-    List<Event> getAllEvents();
+    List<T1> getAllEvents();
 }
