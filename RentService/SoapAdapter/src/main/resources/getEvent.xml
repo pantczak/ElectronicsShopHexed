@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header/>
+    <S:Body xmlns:ns2="http://api.soap.rent_service.tks.pl/">
+        <ns2:getEvent>
+            <arg0>uuidToChange</arg0>
+        </ns2:getEvent>
+    </S:Body>
+</S:Envelope>

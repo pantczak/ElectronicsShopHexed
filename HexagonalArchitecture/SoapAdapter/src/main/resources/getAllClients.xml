@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
-    <SOAP-ENV:Header/>
-    <S:Body xmlns:ns2="http://api.soap.tks.java.pl/">
-        <ns2:getAllClients/>
-    </S:Body>
-</S:Envelope>

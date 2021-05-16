@@ -1,0 +1,17 @@
+.idea
+target
+
+ApplicationCore/target
+ApplicationPorts/target
+RepositoriesAdapters/target
+ApplicationCore/DomainModel/target
+ApplicationCore/ApplicationService/target
+UserRabbitMq/target/
+
+UserService.iml
+UserRabbitMq/UserRabbitMq.iml
+RepositoriesAdapters/RepositoriesAdapters.iml
+ApplicationPorts/ApplicationPorts.iml
+ApplicationCore/ApplicationCore.iml
+ApplicationCore/ApplicationService/ApplicationService.iml
+ApplicationCore/DomainModel/DomainModel.iml
