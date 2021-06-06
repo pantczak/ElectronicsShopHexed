@@ -17,7 +17,7 @@
         </dependency>
     </dependencies>
 
-    <artifactId>ApplicationPorts</artifactId>
+    <artifactId>RentApplicationPorts</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>

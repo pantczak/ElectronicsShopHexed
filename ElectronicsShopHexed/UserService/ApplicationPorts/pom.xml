@@ -7,7 +7,11 @@
         <groupId>pl.tks.user_service</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>UserApplicationPorts</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
     <dependencies>
         <dependency>
@@ -17,7 +21,6 @@
         </dependency>
     </dependencies>
 
-    <artifactId>ApplicationPorts</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>

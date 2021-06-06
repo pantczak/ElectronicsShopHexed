@@ -43,7 +43,7 @@
 <!--        </dependency>-->
     </dependencies>
 
-    <artifactId>ApplicationService</artifactId>
+    <artifactId>RentApplicationService</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     

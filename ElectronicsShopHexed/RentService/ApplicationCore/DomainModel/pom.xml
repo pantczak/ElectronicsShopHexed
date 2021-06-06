@@ -10,7 +10,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>DomainModel</artifactId>
+    <artifactId>RentDomainModel</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>

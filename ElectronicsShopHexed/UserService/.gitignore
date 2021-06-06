@@ -15,8 +15,3 @@ ApplicationPorts/ApplicationPorts.iml
 ApplicationCore/ApplicationCore.iml
 ApplicationCore/ApplicationService/ApplicationService.iml
 ApplicationCore/DomainModel/DomainModel.iml
-/ApplicationCore/ApplicationCore (2) (pl.tks.user_service).iml
-/ApplicationCore/ApplicationService/ApplicationService (2) (pl.tks.user_service).iml
-/ApplicationPorts/ApplicationPorts (2) (pl.tks.user_service).iml
-/RepositoriesAdapters/RepositoriesAdapters (2) (pl.tks.user_service).iml
-/ApplicationCore/DomainModel/DomainModel (2) (pl.tks.user_service).iml
