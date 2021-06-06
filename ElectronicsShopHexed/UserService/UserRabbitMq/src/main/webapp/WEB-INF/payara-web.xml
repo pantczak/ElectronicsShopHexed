@@ -1,0 +1,4 @@
+<payara-web-app error-url="">
+    <context-root>/userservice</context-root>
+    <class-loader delegate="true"/>
+</payara-web-app>
